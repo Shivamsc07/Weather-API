@@ -1,0 +1,60 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherSphere - 3D Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="weather-card">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Enter city name...">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="weather-info">
+                <div class="main-info">
+                    <h1 class="city-name">London</h1>
+                    <div class="temperature">24°C</div>
+                    <div class="condition">Partly Cloudy</div>
+                </div>
+                
+                <div class="additional-info">
+                    <div class="info-box">
+                        <i class="fas fa-tint"></i>
+                        <span class="humidity">78%</span>
+                    </div>
+                    <div class="info-box">
+                        <i class="fas fa-wind"></i>
+                        <span class="wind">12 km/h</span>
+                    </div>
+                </div>
+                
+                <div class="detailed-info">
+                    <div class="detail-box">
+                        <span>Feels Like</span>
+                        <span class="feels-like">26°C</span>
+                    </div>
+                    <div class="detail-box">
+                        <span>Visibility</span>
+                        <span class="visibility">10 km</span>
+                    </div>
+                    <div class="detail-box">
+                        <span>Air Quality</span>
+                        <span class="air-quality">Good</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="error-message"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
